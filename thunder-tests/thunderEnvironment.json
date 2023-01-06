@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "d32ebfdf-47b9-4fa8-bfed-76e9fdf70989",
+    "name": "nestbookmark",
+    "default": true,
+    "sortNum": 10000,
+    "created": "2023-01-06T20:56:25.708Z",
+    "modified": "2023-01-06T20:56:25.708Z",
+    "data": [
+      {
+        "name": "jwt",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjUsImVtYWlsIjoic2tzYWxtYW5taWFoMkBnbWFpbC5jb20iLCJpYXQiOjE2NzMwNDIxMjIsImV4cCI6MTY3MzA0MzAyMn0.x4gH0yK1IBCuLTwZ5FvP1zCTos6shRe28G-QcMUPtfA"
+      }
+    ]
+  }
+]

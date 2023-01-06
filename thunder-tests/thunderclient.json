@@ -1,0 +1,69 @@
+[
+  {
+    "_id": "59b8f082-0295-43a1-98c2-781cdba8479e",
+    "colId": "7a573199-cc26-4610-9977-34f6847cbce1",
+    "containerId": "4c4b8f61-c325-49b4-8732-0cb9a5f29709",
+    "name": "Me",
+    "url": "http://localhost:3333/users/me",
+    "method": "GET",
+    "sortNum": 10000,
+    "created": "2023-01-06T20:56:08.058Z",
+    "modified": "2023-01-06T21:10:30.936Z",
+    "headers": [],
+    "params": [],
+    "auth": {
+      "type": "bearer",
+      "bearer": "{{jwt}}"
+    },
+    "tests": []
+  },
+  {
+    "_id": "bba1fe73-0e0d-4331-89e2-125f82c7bdf1",
+    "colId": "7a573199-cc26-4610-9977-34f6847cbce1",
+    "containerId": "ac4c2362-30f5-4e05-95cf-864e3a0d27bd",
+    "name": "Login",
+    "url": "http://localhost:3333/auth/login",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-01-06T20:56:08.060Z",
+    "modified": "2023-01-06T21:55:22.729Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"email\":\"sksalmanmiah2@gmail.com\",\n  \"password\":\"test\"\n}",
+      "form": []
+    },
+    "auth": {
+      "type": "bearer",
+      "bearer": "\\"
+    },
+    "tests": [
+      {
+        "type": "set-env-var",
+        "custom": "json.access_token",
+        "action": "setto",
+        "value": "{{jwt}}"
+      }
+    ]
+  },
+  {
+    "_id": "9d0088d3-7443-4885-8bc3-73110180e94c",
+    "colId": "7a573199-cc26-4610-9977-34f6847cbce1",
+    "containerId": "ac4c2362-30f5-4e05-95cf-864e3a0d27bd",
+    "name": "Signup",
+    "url": "http://localhost:3333/auth/signup",
+    "method": "POST",
+    "sortNum": 30000,
+    "created": "2023-01-06T20:56:08.061Z",
+    "modified": "2023-01-06T20:56:08.061Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"email\":\"sksalmanmiah2@gmail.com\",\n  \"password\":\"test\"\n}",
+      "form": []
+    },
+    "tests": []
+  }
+]
